@@ -13,15 +13,25 @@ body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,
               position:absolute;
               top:auto;
             }
-           @media (min-width: 991px) {
+           @media (max-width: 991px) {
+              .bg-video {
+                height: 10px;
+                bottom:550px;
+                right:0px;
+                position:relative;
+              }
+          }
+          @media (min-width: 991px) {
             .bg-video {
-              height: 50vh;
-              bottom:25%;
-              right:10%;
+              z-index:2;
+              bottom:150px;
+              max-width: 30%;
+              right:100px;
+              display:flex;
               position:absolute;
-              
+              top:auto;
             }
-        }           
+        }
  @media (max-width: 991px) {
      .bg-video {
              display: none;
